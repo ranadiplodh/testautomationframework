@@ -13,6 +13,7 @@ public class PropertiesFileReader {
         try {        	 
             properties.load(new FileInputStream("resources/browser-config.properties"));
             properties.load(new FileInputStream("resources/testdata-config.properties"));
+            properties.load(new FileInputStream("resources/page-config.properties"));
         } catch (Exception e) {
             System.out.println("Exception: " + e);
        } 

@@ -1,25 +1,30 @@
 package com.testautomation.TestRunner;
 
+import cucumber.api.CucumberOptions;
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import cucumber.api.CucumberOptions;
+import com.testautomation.Listeners.ExtentReportListener;
+
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 import cucumber.api.testng.*;
 
+@RunWith(Cucumber.class)
 @CucumberOptions (
         features = "./features/"
         ,glue = {"com.testautomation.StepDef"}
-        ,tags = {"@CucumberHooks"}) 
-		/*,plugin= { "pretty",
-                "html:target/site/cucumber-pretty",
-        "json:target/cucumber.json" },
-        monochrome = true)*/
+        ,tags = {"@DigitalPMO"}
+        ) 
+		
 public class TestRunner {
-    private TestNGCucumberRunner testNGCucumberRunner;
+    private TestNGCucumberRunner testNGCucumberRunner;   
     
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {    	
@@ -28,13 +33,12 @@ public class TestRunner {
 
     @Test(dataProvider = "features")    
     public void feature(PickleEventWrapper eventwrapper,CucumberFeatureWrapper cucumberFeature) throws Throwable {
-    	//testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
     	testNGCucumberRunner.runScenario(eventwrapper.getPickleEvent());
+    	
     }
     
     @DataProvider//(parallel=true)
-    public Object[][] features() {
-       // return testNGCucumberRunner.provideFeatures();    	
+    public Object[][] features() {           	
     	 return testNGCucumberRunner.provideScenarios();
     }
     
@@ -42,4 +46,5 @@ public class TestRunner {
     public void tearDownClass() throws Exception {    	
         testNGCucumberRunner.finish();        
     }
+ 
 }

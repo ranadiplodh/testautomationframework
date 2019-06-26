@@ -1,49 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Test Report" duration-ms="62219" started-at="2019-02-10T14:19:59Z" finished-at="2019-02-10T14:21:01Z">
+  <suite name="Automation Test Report" duration-ms="73223" started-at="2019-06-24T11:01:45Z" finished-at="2019-06-24T11:02:58Z">
     <groups>
     </groups>
-    <test name="Automation Test Report" duration-ms="62219" started-at="2019-02-10T14:19:59Z" finished-at="2019-02-10T14:21:01Z">
+    <test name="Automation Test Report" duration-ms="73223" started-at="2019-06-24T11:01:45Z" finished-at="2019-06-24T11:02:58Z">
       <class name="com.testautomation.TestRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testautomation.TestRunner.TestRunner@544fe44c]" name="setUpClass" is-config="true" duration-ms="120" started-at="2019-02-10T14:19:59Z" finished-at="2019-02-10T14:19:59Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testautomation.TestRunner.TestRunner@641147d0]" name="setUpClass" is-config="true" duration-ms="226" started-at="2019-06-24T11:01:46Z" finished-at="2019-06-24T11:01:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner@544fe44c]" name="feature" duration-ms="30345" started-at="2019-02-10T14:19:59Z" data-provider="features" finished-at="2019-02-10T14:20:30Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner@641147d0]" name="feature" duration-ms="19525" started-at="2019-06-24T11:01:46Z" data-provider="features" finished-at="2019-06-24T11:02:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Youtube channel name validations"]]>
+                <![CDATA["Secenario1"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Youtube channel name validation"]]>
+                <![CDATA["Digital PMO"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner@544fe44c]" name="feature" duration-ms="31417" started-at="2019-02-10T14:20:30Z" data-provider="features" finished-at="2019-02-10T14:21:01Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner@641147d0]" name="feature" duration-ms="18033" started-at="2019-06-24T11:02:05Z" data-provider="features" finished-at="2019-06-24T11:02:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Channel Validations"]]>
+                <![CDATA["Secenario2"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Youtube channel name validation"]]>
+                <![CDATA["Digital PMO"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testautomation.TestRunner.TestRunner@544fe44c]" name="tearDownClass" is-config="true" duration-ms="17" started-at="2019-02-10T14:21:01Z" finished-at="2019-02-10T14:21:01Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner@641147d0]" name="feature" duration-ms="17848" started-at="2019-06-24T11:02:23Z" data-provider="features" finished-at="2019-06-24T11:02:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Secenario3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Digital PMO"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner@641147d0]" name="feature" duration-ms="17187" started-at="2019-06-24T11:02:41Z" data-provider="features" finished-at="2019-06-24T11:02:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Secenario4"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Digital PMO"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testautomation.TestRunner.TestRunner@641147d0]" name="tearDownClass" is-config="true" duration-ms="17" started-at="2019-06-24T11:02:58Z" finished-at="2019-06-24T11:02:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

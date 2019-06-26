@@ -1,25 +1,24 @@
 package com.testautomation.Listeners;
 
-import java.io.IOException;
-import java.util.Map;
-import java.util.Properties;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.testautomation.Utility.ExcelHandler;
-import com.testautomation.Utility.PropertiesFileReader;
-import com.testautomation.Utility.TestDataHandler;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.gherkin.model.Feature;
+import com.aventstack.extentreports.gherkin.model.Scenario;
+
 
 public class ITestListenerImpl extends ExtentReportListener implements ITestListener
 {
-	private static ExtentReports extent;
-
+	
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+    	/*extendReportListener.test = extendReportListener.extent.createTest(result.getTestName());
+    	extendReportListener.test = extendReportListener.test.createNode(result.getMethod().getMethodName());
+    	
+    	extendReportListener.test.log(Status.INFO, result.getMethod().getMethodName() + "test is started");*/
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -58,7 +57,6 @@ public class ITestListenerImpl extends ExtentReportListener implements ITestList
 	public void onStart(ITestContext context) {
 		System.out.println("Execution started on UAT env...");
 		extent= setUp();
-		
 	}
 
 	public void onFinish(ITestContext context) {
@@ -67,6 +65,4 @@ public class ITestListenerImpl extends ExtentReportListener implements ITestList
 		System.out.println("Generated Report. . .");	
 		
 	}
-	
-
 }
